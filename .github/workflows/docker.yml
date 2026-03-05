@@ -37,6 +37,8 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
+          # Esta línea soluciona el error de tu MacBook Air (Chip M1/M2/M3)
+          platforms: linux/amd64,linux/arm64
           tags: | 
             tonmagon/practica-7.1:latest
             ghcr.io/antmaggon/practica-7.1:latest
